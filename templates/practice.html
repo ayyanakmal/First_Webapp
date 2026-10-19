@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hi</title>
+</head>
+<body>
+<h1>welcome to collage</h1>
+<p>check ur result below</p>
+<a href="{% url 'res'%}">click here to check</a>
+<br></br>
+<label>Enter ur name:</label>
+<form action="{% url 'res'%}">
+    <input type="text" name="namprac">
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

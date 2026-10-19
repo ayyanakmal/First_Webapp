@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WELCOME</title>
+</head>
+<body>
+<h1>AVG MARKS</h1>
+{{average}}
+<h1>HIGHEST MARKS</h1>
+{{max}}
+<h1>LOWEST MARKS</h1>
+{{lowest}}
+<h1>STD PASSED</h1>
+{{passed}}
+<h1>STUDENTS NAMES</h1>
+{{passers}}
+<h1>STUDENTS GRADE</h1>
+{{grades}}
+<h1>GRADES COUNT</h1>
+{% for grade,count in numofgrade.items %}
+    <p>{{grade}}:{{count}}</p>
+{% empty %}
+<p>no</p>
+{% endfor %}
+</body>
+</html>
